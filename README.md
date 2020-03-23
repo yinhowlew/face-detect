@@ -2,7 +2,7 @@
 
 ## Technologies
 
-Frontend:  React
+Frontend:  React <br />
 Server:    Node.js
 DB:        PostgreSQL
 Hosting:   Heroku
