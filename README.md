@@ -3,7 +3,7 @@
 ## Technologies
 
 Frontend:  React <br />
-Server:    Node.js
-DB:        PostgreSQL
-Hosting:   Heroku
-Detection API:  Clarifai
+Server:    Node.js <br />
+DB:        PostgreSQL <br />
+Hosting:   Heroku <br />
+Detection API:  Clarifai <br />
