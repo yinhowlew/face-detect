@@ -85,7 +85,13 @@ class App extends Component {
     })
     .then(response => response.json())
     .then(response => {
-      if (response) {
+      console.log(response)
+      if (response === "unable to work with API") {
+        alert("please enter a valid image url")
+        return;
+      }
+      // if (response) {
+      else {
         fetch('https://vast-sands-82484.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
@@ -98,7 +104,7 @@ class App extends Component {
           this.setState(Object.assign(this.state.user, { entries: count }))
           // this is used to update state of count within “user” state. we use Object.assign because if we just update user, it will update everything instead of just entries
           })
-        .catch(console.log)
+        .catch(err => console.log(err))
       }
       // output from calculateFaceLocation is used on displayFaceBox
       this.displayFaceBox(this.calculateFaceLocation(response))
