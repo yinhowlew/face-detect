@@ -1,4 +1,5 @@
-
+## Intro
+A web app that detects face location in an image using Clarifai's API
 
 ## Technologies
 
